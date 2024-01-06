@@ -1,0 +1,97 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.title{
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(122, 174, 122);
+}
+.title p{
+  font-size: 18px;
+  margin: 6px;
+}
+img{
+
+  width: 200px;
+  height:100px;
+   padding: 10px;
+}
+.contenedor1{
+
+  display:flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+.menu{
+  margin: 3px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+}
+.menu h3{
+  text-align: center;
+  font-size: 18px;
+
+}
+.primera_parte{
+  margin-top: 30px;
+  border: 1px solid #aaa;
+  width: 650px;
+ margin-left: 10px;
+ position: absolute;
+}
+.formulario{
+  width: 500px;
+  border: 1px solid #aaa;
+  padding: 20px;
+  margin: 20px;
+
+}
+.formulario h4{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 9px;
+}
+.formulario input{
+  margin-top: 15px;
+  padding: 10px;
+
+}
+.formulario p{
+  margin-top: 7px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.btn{
+  height: 40px;
+  width: 120px;
+  padding:0 10px;
+  background-color:cornflowerblue;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.section{
+  position: relative;
+  margin-left: 650px;
+  top:10px;
+
+}
+.contenedor1 ul{
+  margin-left: 40px;
+  cursor: pointer;
+}
+.btnSeleccionar{
+  margin-top: 10px;
+  width: 130px;
+  font-size: 16px;
+  border-radius: 5px ;
+  border-color: #109DFA;
+  background-color:#109DFA;
+  margin-bottom: 10px;
+  margin-left: 35px;
+}
+
