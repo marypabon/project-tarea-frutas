@@ -7,32 +7,32 @@
 
   <div class="primera_parte">
   <div class="contenedor1">
-    <div class="menu" >
+    <div class="menu"  >
       <h3> Fresas </h3>
       <img src="assets/img/Frutas/fresas.jpg" alt="">
       <ul  >
-        <li>{{fresa.nombre}}</li>
-        <li>$  {{fresa.costByGram}} g.</li>
+        <li>{{Fresa.nombre}}</li>
+        <li>$ {{Fresa.costByGram}} g.</li>
       </ul>
-      <button class="btnSeleccionar">Seleccionar</button>
+      <button class="btnSeleccionar" (click)="selectProduct('Fresa')"> Agregar </button>
     </div>
     <div class="menu">
       <h3> Manzanas </h3>
      <img src="assets/img/Frutas/manzanas.jpg" alt="">
      <ul>
-      <li>{{manzana.nombre}}</li>
-      <li>$  {{manzana.costByGram}} g.</li>
+      <li>{{Manzana.nombre}}</li>
+      <li>$  {{Manzana.costByGram}} g.</li>
     </ul>
-    <button class="btnSeleccionar">Seleccionar</button>
+    <button class="btnSeleccionar" (click)="selectProduct('Manzanas')">Agregar</button>
     </div>
     <div class="menu">
       <h3> Naranjas </h3>
       <img src="assets/img/Frutas/naranja.jpg" alt="">
       <ul>
-        <li>{{naranja.nombre}}</li>
-        <li>$  {{naranja.costByGram}} g.</li>
+        <li>{{Naranja.nombre}}</li>
+        <li>$  {{Naranja.costByGram}} g.</li>
       </ul>
-      <button class="btnSeleccionar">Seleccionar</button>
+      <button class="btnSeleccionar" (click)="selectProduct('Naranja')">Agregar</button>
     </div>
   </div>
 
@@ -41,28 +41,28 @@
       <h3>Platano</h3>
       <img src="assets/img/Frutas/platanos.jpg" alt="">
       <ul>
-        <li>{{platano.nombre}}</li>
-        <li>$ {{platano.costByGram}} g.</li>
+        <li>{{Platano.nombre}}</li>
+        <li>$ {{Platano.costByGram}} g.</li>
       </ul>
-      <button class="btnSeleccionar">Seleccionar</button>
+      <button class="btnSeleccionar"  (click)="selectProduct('Platano')">Agregar</button>
     </div>
     <div class="menu">
       <h3> Sandias </h3>
       <img src="assets/img/Frutas/sandia.jpg" alt="">
       <ul>
-        <li>{{sandia.nombre}}</li>
-        <li>$ {{sandia.costByGram}} g.</li>
+        <li>{{Sandia.nombre}}</li>
+        <li>$ {{Sandia.costByGram}} g.</li>
       </ul>
-      <button class="btnSeleccionar">Seleccionar</button>
+      <button class="btnSeleccionar" (click)="selectProduct('Sandia')">Agregar</button>
     </div>
     <div class="menu">
       <h3> Uvas </h3>
       <img src="assets/img/Frutas/uvas.jpg" alt="">
       <ul>
-        <li>{{uva.nombre}}</li>
-        <li>$  {{uva.costByGram}} g.</li>
+        <li>{{Uvas.nombre}}</li>
+        <li>$  {{Uvas.costByGram}} g.</li>
       </ul>
-      <button class="btnSeleccionar">Seleccionar</button>
+      <button class="btnSeleccionar" (click)="selectProduct('Uvas')">Agregrar</button>
     </div>
   </div>
   </div>
@@ -71,11 +71,14 @@
  <section class="section">
   <form class="formulario">
     <h4> Productos de nuestra canasta </h4> <br>
-      <input type="text" class="form-control" placeholder="Producto">
+    <label>Su fruta seleccionada es:</label>
+
+    <h2 *ngIf="agregar">{{product}} <p *ngIf="agregar"> $ {{precio}}g</p></h2>
+      <!-- <input type="text" class="form-control" placeholder="Producto" *ngIf="product" {{agregar}}> -->
       <input type="number" class="form-control" placeholder="Gramos">
       <p>Digite la cantidad de gramos que desea llevar</p>
       <button class="btn" type="submit" >Calcular</button>
-      <button class="btn" type="submit" >Guardar</button>
+      <button class="btn" type="submit">Guardar</button>
 
 
   </form>

@@ -1,5 +1,5 @@
 
 export interface Iproduct{
-  'nombre': string;
+  nombre: string;
   costByGram:number;
 }
